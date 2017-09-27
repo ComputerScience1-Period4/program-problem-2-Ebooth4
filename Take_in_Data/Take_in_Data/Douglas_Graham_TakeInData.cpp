@@ -18,7 +18,6 @@ using namespace std;
 
 string name;
 
-
 // Functions
 void pause() {
 	cout << "Press any key to continue . . .";
@@ -31,6 +30,8 @@ void main() {
 	int age;
 	char last_name;
 	int feeling;
+	double math;
+	char Y_N;
 
 	cout << "Hello World!" << endl;
 	cout << "I am the computer XD" << endl;
@@ -51,7 +52,7 @@ void main() {
 	cout << " " << endl;
 	cout << "Hello, " << name << " " << last_name << ", who is " << age << " years old" << endl;
 	cout << " " << endl;
-	cout << "How are you (Good = 1, Bad = 2, or Unsure = 3)" << endl;
+	cout << "How are you. Please enter 1,2, or 3 (Good = 1, Bad = 2, or Unsure = 3)" << endl;
 	cin >> feeling;
 	cout << " " << endl;
 	if (feeling == 1) {
@@ -64,6 +65,16 @@ void main() {
 		cout << "Well that's a predicament" << endl;
 	}
 	cout << " " << endl;
+	cout << "Are you good at math? Y (Yes) or N (No)." << endl;
+	cin >> Y_N;
+	cout << "Ok, what is 1.3 + 2.5" << endl;
+	cin >> math;
+	if (math = 3.8) {
+		cout << "Good job! You aren't a waste of time!" << endl;
+	}
+	else {
+		cout << "I can't believe you are this dumb. I'm upset with you" << endl;
+	}
 	this_thread::sleep_for(chrono::seconds(2));
 	cout << "I have to go now bye!" << endl;
 
